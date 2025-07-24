@@ -1,0 +1,20 @@
+const readlineSync = require('readline-sync'); // Import the readline-sync module.
+
+// Prompt for the user's name and greet them
+let userName = readlineSync.question("What's your name? "); // Prompt for input
+console.log(`Hello, ${userName}! Welcome to the Values, Data Types, and Operations Quiz!\n`);
+
+// Ask 5 questions and store answers
+let answer1 = readlineSync.question("Question 1: What is the purpose of the function const? ");
+let answer2 = readlineSync.question("Question 2: Does .question() treat all entries as strings? ");
+let answer3 = readlineSync.question("Question 3: Does + concatenate rather than add two strings? ");
+let answer4 = readlineSync.question("Question 4: Does the function Number() convert string values to numbers? ");
+let answer5 = readlineSync.questionInt("Question 5: : Type the numerical value for the current month."); // Prompt for an integer.
+
+// Print the user's answers
+console.log("\nHere are your answers:");
+console.log(`Question 1: ${answer1}`);
+console.log(`Question 2: ${answer2}`);
+console.log(`Question 3: ${answer3}`);
+console.log(`Question 4: ${answer4}`);
+console.log(`Question 5: ${answer5}`);
